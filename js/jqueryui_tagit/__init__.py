@@ -1,4 +1,4 @@
-from fanstatic import Library, Resource
+from fanstatic import Group, Library, Resource
 from js.jquery import jquery
 from js.jqueryui import jqueryui
 # there's likely some lighter import option in the jqueryui fanstatic package
@@ -12,7 +12,7 @@ js = Resource(library,
               depends=[jquery, jqueryui, ])
 css = Resource(library,
                'jquery.tagit.css',
-               'jquery.tagit.min.css',
+               minified='jquery.tagit.min.css',
                bottom=False,
                depends=[])
 
