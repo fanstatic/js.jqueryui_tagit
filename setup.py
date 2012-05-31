@@ -5,18 +5,25 @@ import os
 # In bugfix releases of the python package, add a '-' suffix and an incrementing integer.
 # For example, a packaging bugfix release version 1.4.4 of the js.jquery package would be version 1.4.4-1 .
 
-version = '2.0.24'
+version = '2.0.24-1'
 
 
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
+try:
+    README = read('README.rst')
+    TEST = read('js', 'jqueryui_tagit', 'test_tagit.txt')
+    CHANGES = read('CHANGES.txt')
+except IOError:
+    README = TEST = CHANGES = ''
+
 long_description = (
-    read('README.rst')
+    README
     + '\n' +
-    read('js', 'jqueryui_tagit', 'test_tagit.txt')
+    TEST
     + '\n' +
-    read('CHANGES.txt'))
+    CHANGES)
 
 setup(
     name='js.jqueryui_tagit',
