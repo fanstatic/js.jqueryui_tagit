@@ -5,7 +5,7 @@ import os
 # In bugfix releases of the python package, add a '-' suffix and an incrementing integer.
 # For example, a packaging bugfix release version 1.4.4 of the js.jquery package would be version 1.4.4-1 .
 
-version = '2.0.24-1'
+version = '2.0.24-2'
 
 
 def read(*rnames):

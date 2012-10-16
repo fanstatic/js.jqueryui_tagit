@@ -1,6 +1,12 @@
 CHANGES
 *******
 
+2.0.24-2
+========
+
+- Depend only on ui_autocomplete and ui_widget instead of pulling in
+  the complete jQuery UI resources.
+
 2.0.24-1
 ========
 
