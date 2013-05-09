@@ -32,7 +32,7 @@ setup(
     long_description=long_description,
     classifiers=[],
     keywords='',
-    url='https://github.com/disko/js.jqueryui_tagit',
+    url='https://github.com/Kotti/js.jqueryui_tagit',
     author='Andreas Kaiser',
     author_email='disko@binary-punks.com',
     license='BSD',
